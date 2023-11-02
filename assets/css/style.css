@@ -20,16 +20,27 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     background-color: hsl(var(--hue), 100%, 50%)
 }
 
+nav {
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 header {
+    width: 100%;
     padding: 40px;
     background: white;
     color: black;
     margin: 25px;
+    margin-top: 0px;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px;
 }
@@ -54,7 +65,7 @@ body.wrong {
 .time-score-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: stretch;
     width: 100%;
 }
@@ -68,6 +79,7 @@ body.wrong {
     margin: 20px;
     width: 25%;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .btn-grid {
